@@ -2,7 +2,7 @@ name: Merge CI
 on: [pull-request]
 jobs:
   Test:
-    runs-on: ${{matric.os}}
+    runs-on: ${{matrix.os}}
     strategy:
       matrix:
         os: [macos-latest, windows-latest, ubuntu-latest]
