@@ -1,1 +1,9 @@
-This is a practice task for the git push and clone lesson.
+# CI-CD testify
+Test Repository for CI CD course
+
+# Table of content
+-Installation
+
+## Installation
+
+How to install
