@@ -2,7 +2,10 @@ name: Merge CI
 on: [pull-request]
 jobs:
   Test:
-    runs-on: [ubuntu-latest, windows-latest, macos-latest]
+    runs-on: ${{matric.os}}
+    strategy:
+      matrix:
+        os: [macos-latest, windows-latest, ubuntu-latest]
     steps:
       - uses: actions/checkout@v2
       - run: python main.py
